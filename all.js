@@ -1,1 +1,2 @@
-console.log('im all')
+console.log('im all');
+console.log('wtf');
