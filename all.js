@@ -183,7 +183,56 @@
 // console.log(calc(5,6));
 // console.log(calc(10,6));
 
-const looger=function(){
-    console.log('hello');
-};
-looger();
+// const looger=function(){
+//     console.log('hello');
+// };
+// looger();
+
+// const calc=(a , b)=>{
+//     console.log('1');
+//     return a+b ;
+// };
+
+// const usdCurr = 28;
+// const eurCurr = 32 ;
+// const discount=0.9;
+
+// function convert(amount,Curr){
+//     return Curr*amount;
+// }
+// function promition(result){
+//     console.log(result*discount);
+// }
+// const res =convert(500,usdCurr);
+// promition(res);
+// promition(convert(500,usdCurr));
+
+// function test(){
+//     for (let i=0 ;i<5; i++){
+//         console.log(i);
+//         if(i===3)return;
+//     }
+//     console.log('done');
+// }
+// test();
+// function doNothing(){}
+//     console.log(doNothing===undefined);
+
+// convert(500,usdCurr);
+// convert(500,eurCurr);
+
+// Место для первой задачи
+
+// function sayHello(a,b,c) {
+//       return a+b+c;
+     
+//  }
+//  console.log(sayHello('Привет',',','Антон!'));
+//  sayHello();
+
+// const str='test';
+// const arr=[1,2,3];
+// console.log(str.length,arr.length );
+
+let num=12.4;
+console.log(Math.round(num));
