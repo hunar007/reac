@@ -70,38 +70,53 @@
     
     // const obj = new Object();
 
-    const options ={
-        name:'test',
-        width:1024,
-        height:1024,
-        colors:{
-            boder:'black',
-            bg:'red',
-        },
-        makeTest: function(){
-            console.log('test');
+    // const options ={
+    //     name:'test',
+    //     width:1024,
+    //     height:1024,
+    //     colors:{
+    //         boder:'black',
+    //         bg:'red',
+    //     },
+    //     makeTest: function(){
+    //         console.log('test');
 
-        }
-    };
-    // console.log(options.name);
-    // delete options.name;
-    // console.log(options);
-
-    // let counter = 0;
-    // for(let key in options){
-    //     if(typeof(options[key])==='object'){
-    //         for(let i in options[key]){
-    //             console.log(`key is ${i} value is ${options[key][i]}`);
-    //             counter++;
-    //         }
-
-    //     }else{
-    //         console.log(`key is ${key} value is ${options[key]}`);
-    //         counter++;
     //     }
+    // };
+    // // console.log(options.name);
+    // // delete options.name;
+    // // console.log(options);
+
+    // // let counter = 0;
+    // // for(let key in options){
+    // //     if(typeof(options[key])==='object'){
+    // //         for(let i in options[key]){
+    // //             console.log(`key is ${i} value is ${options[key][i]}`);
+    // //             counter++;
+    // //         }
+
+    // //     }else{
+    // //         console.log(`key is ${key} value is ${options[key]}`);
+    // //         counter++;
+    // //     }
+    // // }
+    // // console.log(counter);
+    // options.makeTest();
+    // // console.log(Object.keys(options).length);
+    // const{boder ,bg}= options.colors;
+    // console.log(boder);
+    const arr = [1,2,3,4,5];
+    
+    // arr[99]=0;
+    // console.log(arr.length);
+    arr.push(10);
+    // console.log(arr);
+    // for(let i=0 ;i<arr.length;i++){
+    //     console.log(arr[i]);
     // }
-    // console.log(counter);
-    options.makeTest();
-    // console.log(Object.keys(options).length);
-    const{boder ,bg}= options.colors;
-    console.log(boder);
+    // for(let value of arr){
+    //     console.log(value);
+    // }
+    arr.forEach(function(item , i ,arr){
+        console.log(`${i}:${item} внутр массив ${arr}`);
+    });
