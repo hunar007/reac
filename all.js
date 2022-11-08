@@ -258,7 +258,7 @@ const personalMovieDB={
 
 function rememberMyFilms(){
     for(let i=0;i<2;i++){
-        const a = prompt('один из последних просмотренных филмов ?',''),
+        const a = prompt('один из последних просмотренных филмов ?','').trim(),
               b = prompt('на сколько оцените его?','');
               
         if(a != null && b !== null && a !=='' && b !='' && a.length<50){
@@ -270,7 +270,7 @@ function rememberMyFilms(){
         }
     }
 }
-// rememberMyFilms();
+                            
 function detectPersonalLevel(){
     if(personalMovieDB.count >= 10 && personalMovieDB.count <= 30){
         console.log('Посмотрено довоьно мало филмов');
@@ -282,18 +282,18 @@ function detectPersonalLevel(){
         console.log('призашло ошибка');
     }
 }
-// detectPersonalLevel();
+// // detectPersonalLevel();
 
-function showMyDB(hidden){
-    if(!hidden){
-        console.log(personalMovieDB);
-    }
-}
-showMyDB(personalMovieDB.privat);
+// function showMyDB(hidden){
+//     if(!hidden){
+//         console.log(personalMovieDB);
+//     }
+// }
+// showMyDB(personalMovieDB.privat);
 
-function writeYourGeners(){
-    for(let i=1;i <=3;i++){
-        personalMovieDB.genres[i-1]=prompt(`Ваш любимый жанр под номером${i}`);
-    }
-}
-writeYourGeners();
+// function writeYourGeners(){
+//     for(let i=1;i <=3;i++){
+//         personalMovieDB.genres[i-1]=prompt(`Ваш любимый жанр под номером${i}`);
+//     }
+// }
+// writeYourGeners();
